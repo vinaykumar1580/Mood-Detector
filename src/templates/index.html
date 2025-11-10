@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Detector</h1>
+        <form method="POST">
+            <input type="text" name="sentence" placeholder="Enter a sentence..." required>
+            <button type="submit">Detect Mood</button>
+        </form>
+        {% if prediction %}
+        <div class="result">
+            <h2>Predicted Mood: <span>{{ prediction }}</span></h2>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+mood-detector-web
+├── src
+│   ├── static
+│   │   ├── css
+│   │   │   └── styles.css
+│   │   └── js
+│   │       └── main.js
+│   ├── templates
+│   │   ├── base.html
+│   │   └── index.html
+│   ├── app.py
+│   ├── mood_detector.py
+│   └── train.csv
+├── requirements.txt
+└── README.md
